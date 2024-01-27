@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(90deg, rgba(71, 46, 8, 1) 33%, rgba(124, 71, 14, 0.9472163865546218) 67%, rgba(80, 53, 3, 1) 100%);
+
+    >.base {
+        width: 200px;
+        height: 300px;
+        margin: 0px auto;
+        position: relative;
+
+        >div {
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            top: 0;
+            left: 0;
+            transform-origin: 200% 105%;
+            transition: 4s;
+
+            &:hover~div {
+                transform: rotate(0deg);
+            }
+
+            >figure {
+                width: inherit;
+                height: inherit;
+                overflow: hidden;
+
+                >img {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+
+            &:nth-of-type(1) {
+                transform: rotate(-60deg);
+            }
+
+            &:nth-of-type(2) {
+                transform: rotate(-57deg);
+            }
+
+            &:nth-of-type(3) {
+                transform: rotate(-54deg);
+            }
+
+            &:nth-of-type(4) {
+                transform: rotate(-51deg);
+            }
+
+            &:nth-of-type(5) {
+                transform: rotate(-48deg);
+            }
+
+            &:nth-of-type(6) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-of-type(7) {
+                transform: rotate(-42deg);
+            }
+
+            &:nth-of-type(8) {
+                transform: rotate(-39deg);
+            }
+
+            &:nth-of-type(9) {
+                transform: rotate(-36deg);
+            }
+
+            &:nth-of-type(10) {
+                transform: rotate(-33deg);
+            }
+
+            &:nth-of-type(11) {
+                transform: rotate(-30deg);
+            }
+
+            &:nth-of-type(12) {
+                transform: rotate(-27deg);
+            }
+
+            &:nth-of-type(13) {
+                transform: rotate(-24deg);
+            }
+
+            &:nth-of-type(14) {
+                transform: rotate(-21deg);
+            }
+        }
+    }
+}
